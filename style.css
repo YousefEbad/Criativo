@@ -62,7 +62,7 @@ header button:hover{
 
 
 .container nav .navText{
-    padding: 0 120px;
+    margin-left: 230px;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -232,3 +232,226 @@ header button:hover{
     margin-left: 17%;
     color: #58cab1;
 }
+
+/* screen 2 ----------------------------------------------*/
+.services-section {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 20px;
+}
+.services-intro {
+    padding: 50px 100px 0px 100px;
+    color: #dee9e7;
+    font-size: 18px;
+    margin-bottom: 10px;
+    transform: translate(0, 25px);
+}
+
+.services-intro .we-do{
+    position: relative;
+    display: block;
+}
+
+.services-intro .we-do::after{
+    content: "";
+    width: 120px;
+    height: 3px;
+    background-color: #5acfb6;
+    display: block; /* Ensures it renders as a block-level element */
+    margin: 30px 0; /* Optional: Adjust for spacing */
+}
+
+
+h4{
+    color: #76c6b8;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.services-intro h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.services-intro h1 span {
+    color: #76c6b8;
+}
+.services-intro p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.view-all-btn {
+    display: inline-block;
+    padding: 20px 20px;
+    background-color: #76c6b8;
+    color: #faf9f9;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0;
+    margin-top: 40px;
+}
+.services-grid {
+    margin-top: 50px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.service-box {
+    /* background-image: linear-gradient(to top ,#142c27 ,#0c0c0c); */
+
+    background-color: #0c0c0c;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.service-box .brandImg{
+    width: 150px;
+    background-color: transparent;
+    color: #5cd2b8;
+}
+
+.services-grid .iconLight{
+    background-image: linear-gradient(to top, #142c27 30%, #0c0c0c 60%);
+}
+
+.services-grid .translate{
+    transform: translate(30px, -28px);
+}
+
+.services-grid .service-box h3{
+    color: #f8f9f7 !important;
+}
+
+.services-grid .service-box p{
+    color: #929594 !important;
+}
+
+
+.service-box {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #76c6b8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-box h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #76c6b8;
+}
+
+.service-box p {
+    /* problem here */
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    color: #a1d0bc;
+    /* margin-block-end: .1rem; */
+}
+/* screen 3------------------------------------------- */
+
+
+
+/* About Section */
+
+.about-section{
+    height: 100vh;
+    background-color: #0c0c0c;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-section .text{
+    width: 40%;
+    position: absolute;
+    right:12%;
+    top: 20%;
+}
+
+.about-section .text h1{
+    position: relative;
+    display: block;
+}
+
+
+.about-section .text h1::after{
+    content: "";
+    width: 120px;
+    height: 3px;
+    background-color: #5acfb6;
+    display: block; /* Ensures it renders as a block-level element */
+    margin: 30px 0;
+}
+
+.about-section .text .content h3{
+    color: #5bd0b5;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.about-section .text .content h1{
+    font-size: 55px;
+    color: #f9f9f9;
+}
+
+.about-section .text .content h1 span{
+    color: #5bd2b8;
+}
+
+.about-section .text .content p{
+    color: #939393;
+    line-height: 25px;
+}
+
+.about-section .text .features{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 100px;
+}
+
+.about-section .text .features .feature{
+    display: flex;
+    
+}
+
+.about-section .text .features .feature .icon img{
+    width: 70px;
+    margin-right: 12px;
+    transform: translate(0, -10px);
+}
+
+.about-section .text .features .feature .feature-text h4{
+    color: #f7f7f7 ;
+    font-size: 20px;
+}
+
+.about-section .text .features .feature .feature-text p{
+    color: #939393;
+    margin-top: 12px;
+    line-height: 25px;
+}
+
+.about-section .image{
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 12%;
+}
+
