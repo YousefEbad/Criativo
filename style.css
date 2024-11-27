@@ -862,6 +862,8 @@ header button:hover{
     padding-bottom: 60px;
     padding-left: 12px;
     border-radius: 2px;
+    position: relative;
+    z-index: 677;
 }
 
 .our-team .cards .card .image img{
@@ -899,6 +901,46 @@ header button:hover{
     color: #949494;
     width: 70%;
     line-height: 25px;
+}
+
+
+/* .our-team .image22{
+    position: absolute;
+    width: 60%; Takes 25% of the section width
+    height: 100%; Stretches across the entire section height
+    right: 0;
+    background-image: url("assets/imgs/file1.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("assets/imgs/file1.png");
+    background-position: right bottom;
+    overflow: hidden;
+    background-repeat: repeat-y;
+    background-size: contain; Adjust background size
+    z-index: 1;
+} */
+
+.our-team .image22 {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: hidden; /* Ensure nothing overflows */
+}
+
+.our-team .image22::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/imgs/file1.png");
+    background-position: right bottom;
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    opacity: 0.5; /* Decrease opacity */
+    z-index: 1; /* Place it behind the container content */
 }
 
 .our-team .cards .card .content .social{
@@ -1004,13 +1046,13 @@ header button:hover{
 
 /* clients section */
 
-.clients{
+/* .clients{
     height: 72vh;
     background-color: #0e0e0e;
     color: #fff;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     overflow: hidden;    
     background-image: url("assets/imgs/file.png");
     background-size: 80% auto;
@@ -1019,8 +1061,33 @@ header button:hover{
     position: relative;
 
     z-index: -3;
+} */
+
+.clients {
+    height: 72vh;
+    background-color: #0e0e0e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;    
+    position: relative;
+    z-index: -3; /* Keeps container below other content */
 }
 
+.clients::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/imgs/file.png");
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.4; /* Adjust the opacity of the image */
+    z-index: -1; /* Ensure it's behind the container content */
+}
 /* decrease opacity of background image */
 
 
