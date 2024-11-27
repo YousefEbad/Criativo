@@ -471,6 +471,7 @@ header button:hover{
     padding: 100px;
     text-align: center;
     position: relative;
+    height: 60vh;
   }
 
   body .stats-section .image{
@@ -521,17 +522,49 @@ header button:hover{
     min-width: 300px;
     margin-right: 20px;
 }
+
+.latest-project .content h4{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.latest-project .content h1::after{
+    content: "";
+    width: 82px;
+    height: 3px;
+    background-color: #5acfb6;
+    display: block; /* Ensures it renders as a block-level element */
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+.latest-project .content p{
+    font-size: 14px;
+    line-height: 32px;
+    color: #969696;
+    margin-bottom: 40px;
+}
+
+.latest-project .content .dot::after{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+}
 .section-title {
     color: #0ed39f;
     font-size: 18px;
     margin-bottom: 10px;
 }
 .main-title {
-    font-size: 36px;
-    margin: 10px 0;
+    font-size: 45px;
+    margin: 7px 0;
 }
 .main-title span {
-    color: #0ed39f;
+    color: #5cd2b8;
 }
 .description {
     font-size: 16px;
@@ -544,10 +577,44 @@ header button:hover{
     padding: 0;
     color: #ffffff;
 }
-.checklist li {
-    margin-bottom: 10px;
+.checklist .true1 {
+    margin-bottom: 25px;
     color: #ffffff;
     font-size: 16px;
+}
+
+.about-section .dot::after{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 3px;
+    background-color: #fff;
+}
+
+.services-section .dot::after{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 3px;
+    background-color: #fff;
+}
+
+.news-section .dot::after{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-left: 3px;
+    background-color: #fff;
+}
+
+.checklist .true{
+    color: #5cd1b7;
 }
 /* إعدادات الصور */
 .images {
@@ -606,21 +673,50 @@ header button:hover{
     justify-content: center;
     align-items: center;
     display: flex;
+    height: 125vh;
+}
+
+.why-choose-us .image
+{
+    position: relative;
+    transform: translateY(80px);
+}
+
+.why-choose-us .image i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    border: solid 2px #fff;
+    padding: 22px;
+    border-radius: 50%;
+    
 }
 .why-choose-us .content{
-    padding-top: 100px;
     margin: 20px;
+}
+
+/* but dot in end of span */
+.why-choose-us .content h1 .dot::after{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
 }
 .why-choose-us h4{
     color: #0ed39f;
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 10px;
+    letter-spacing: 4px;
 }
 .why-choose-us .video-container{
     padding-top: 160px;
 }
 .why-choose-us h1 {
-    font-size: 36px;
+    font-size: 45px;
     color: #fff;
     margin-bottom: 50px;
 }
@@ -629,10 +725,13 @@ header button:hover{
 }
 .why-choose-us p {
     margin: 20px 0;
-    line-height: 1.6;
+    line-height: 12px !important;
+    font-size: 16px;
+    color: #c0c0c0;
 }
 .why-choose-us ul {
     margin-bottom: 30px ;
+    margin-top: 100px;
     list-style: none;
     padding: 0;
 }
@@ -641,8 +740,12 @@ header button:hover{
     font-size: 18px;
 }
 
-.video-container i{
-color: #00ffb3;
+.video-container .true{
+    color: #0c0c0c;
+    padding: 3px;
+    background-color: #5cd2b8;
+    border-radius: 50%;
+    font-weight: 900;
 }
 
 
@@ -655,7 +758,16 @@ color: #00ffb3;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+
+/* .our-team .image22 img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    background-repeat: repeat-y;
+} */
 
 .our-team .head{
     width: 50%;
@@ -904,10 +1016,13 @@ color: #00ffb3;
     background-size: 80% auto;
     background-repeat: no-repeat; 
     background-position: center; 
-    filter: grayscale(50%);
     position: relative;
-    z-index: 746;
+
+    z-index: -3;
 }
+
+/* decrease opacity of background image */
+
 
 
 .clients .text{
@@ -1029,6 +1144,18 @@ color: #00ffb3;
         margin-bottom: 10px;
         font-weight: bold;
     }
+.news-section  .section-header h2::after{
+    content: "";
+    width: 82px;
+    height: 3px;
+    background-color: #5acfb6;
+    display: block; /* Ensures it renders as a block-level element */
+    margin-top: 15px;
+    margin-bottom: 60px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
     .section-header h3 {
         margin-bottom: 20px;
         color: #50c8b9;
