@@ -622,7 +622,7 @@ header button:hover{
     grid-template-columns: repeat(2, );
 }
 .image-item  img {
-    width: 46%;
+    width: 54%;
     height: 41%;
 }
 .images1 {
@@ -630,7 +630,7 @@ header button:hover{
     padding: 10px;
 }
 .image-item1 img{
-    width: 103%;
+    width: 106%;
     height: 100%;
 }
 /* screen 6------------------------------------------------ */
